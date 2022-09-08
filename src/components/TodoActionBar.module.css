@@ -1,0 +1,46 @@
+.actionBarComponent {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.actionBar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.actionBar button {
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(57, 134, 74);
+  border: none;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.actionBar input {
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 20px;
+  outline: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s;
+}
+
+.actionBar input:focus {
+  border: 3px solid rgb(57, 134, 74);
+}

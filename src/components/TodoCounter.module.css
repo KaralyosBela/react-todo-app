@@ -1,0 +1,22 @@
+.todoCounter {
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 0px;
+    margin: 15px auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.todoCounter div {
+    padding: 0px 25px;
+}
+
+@media only screen and (max-width: 400px) {
+    .todoCounter {
+        display: flex;
+        flex-direction: column;
+    }
+}
