@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../app/store";
 import { addTodo } from "../features/todosSlice";
-import classes from "../components/TodoActionBar.module.css";
+import classes from "../components/TodoActionBar.module.scss";
 import { TodoPriorityBar } from "./TodoPriorityBar";
 
 export const TodoActionBar: React.FC = () => {

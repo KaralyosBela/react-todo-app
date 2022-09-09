@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import classes from "../components/TodoPriorityBar.module.css";
+import classes from "../components/TodoPriorityBar.module.scss";
 
 interface Props {
     setPrior: Dispatch<SetStateAction<string>>

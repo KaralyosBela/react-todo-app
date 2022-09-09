@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../app/store";
 import { removeCompletedTodos, setFilterOptions } from "../features/todosSlice";
-import classes from "../components/TodoFilterBar.module.css";
+import classes from "../components/TodoFilterBar.module.scss";
 import { useState } from "react";
 import { useCompletedTodos, useRemainingTodos } from "../features/todo.hook";
 

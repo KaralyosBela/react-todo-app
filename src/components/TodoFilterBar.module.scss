@@ -1,0 +1,73 @@
+@import "../Styles/colors.scss";
+
+.filterBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  align-content: flex-start;
+  margin: 15px 0px;
+
+  button {
+    position: relative;
+    font-weight: 700;
+    color: black;
+    background-color: $whiteColor;
+    width: calc(100% / 4);
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+      background-color: $successColor;
+      color: $whiteColor;
+    }
+  }
+
+  .showAllBtn:hover,
+  .completedBtn:hover,
+  .uncompletedBtn:hover {
+    background-color: $successColor;
+    color: $whiteColor;
+  }
+
+  .removeBtn:hover {
+    background-color: $errorColor;
+    color: $whiteColor;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .filterBar {
+        display: flex;
+        flex-direction: column;
+    }
+    .filterBar button {
+        width: auto;
+        margin: 2px 0px;
+    }
+    .filterBar button span {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .filterBar button span {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background: white;
+        border: 2px solid rgb(57, 134, 74);
+        color: rgb(57, 134, 74);
+        transition: all 0.3s ease-in-out;
+    }
+}

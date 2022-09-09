@@ -1,69 +1,81 @@
+@-webkit-keyframes popDiv {
+  0% {
+    transform: scale(1) rotate(10deg);
+  }
+  25% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes popDiv {
+  0% {
+    transform: scale(1) rotate(10deg);
+  }
+  25% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
 .priorityButtons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 10px;
 }
-
 .priorityButtons .low,
-.normal,
-.high {
+.priorityButtons .normal,
+.priorityButtons .high {
   font-weight: 800;
   color: black;
   background-color: white;
-  width: calc(560px / 3);
+  width: 186.6666666667px;
   height: 40px;
   border-radius: 5px;
   border: solid 1px;
   font-size: 18px;
   cursor: pointer;
 }
-
 .priorityButtons .low {
   border-color: rgb(57, 134, 74);
   color: rgb(57, 134, 74);
-  background-color: white;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-
-
-@keyframes popDiv { 
-  0%   {transform: scale(1)  rotate(10deg);}
-  25%  {transform: scale(1) rotate(0deg);}
-  50%  {transform: scale(1) rotate(10deg);}
-  100% {transform: scale(1) rotate(0deg);}
-}
-
 .priorityButtons .low:hover {
+  border-color: rgb(57, 134, 74);
+  color: #fff;
   background-color: rgb(57, 134, 74);
-  color: white;
-  background-color: rgb(57, 134, 74);
-  animation: popDiv 0.5s;
 }
-
-
-
 .priorityButtons .normal {
   border-color: darkorange;
   color: darkorange;
-  background-color: white;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
 .priorityButtons .normal:hover {
   border-color: darkorange;
-  color: white;
+  color: #fff;
   background-color: darkorange;
 }
 .priorityButtons .high {
   border-color: rgb(207, 22, 22);
   color: rgb(207, 22, 22);
-  background-color: white;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-
 .priorityButtons .high:hover {
   border-color: rgb(207, 22, 22);
-  color: white;
+  color: #fff;
   background-color: rgb(207, 22, 22);
 }
 
@@ -73,9 +85,9 @@
     flex-direction: column;
   }
   .priorityButtons .low,
-  .normal,
-  .high {
+.normal,
+.high {
     width: 100%;
     margin: 2px 0px;
   }
-}
+}/*# sourceMappingURL=TodoPriorityBar.module.css.map */

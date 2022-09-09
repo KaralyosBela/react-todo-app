@@ -1,11 +1,11 @@
 .todoList .error {
-    text-align: center;
-    margin: 15px;
-    font-size: 36px;
-    font-weight: 700;
+  text-align: center;
+  margin: 15px;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .todoList {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 5px 15px;
-}
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 5px 15px;
+}/*# sourceMappingURL=TodoList.module.css.map */

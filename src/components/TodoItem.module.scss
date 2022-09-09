@@ -1,0 +1,124 @@
+@import "../Styles/colors.scss";
+
+.todoItem {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 25px;
+  align-items: center;
+  max-width: 1080px;
+  margin: 10px auto;
+  border: none;
+  background-color: $whiteColor;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 1s;
+  cursor: pointer;
+
+  ::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: $successColor;
+    transition: all 0.8s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+
+    ::after {
+      width: 100%;
+    }
+  }
+
+  .todoLeftSie {
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .todoRightSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .deletTodoBtn {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 2px 12px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 28px;
+    color: $errorColor;
+    background-color: $whiteColor;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      color: $whiteColor;
+      background-color: $errorColor;
+    }
+  }
+
+  .priority {
+    width: 70px;
+    font-weight: 500;
+    margin-right: 20px;
+    color: whiteColor;
+    padding: 2px 12px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+
+  .low {
+    background-color: $successColor;
+    color: $whiteColor;
+  }
+
+  .normal {
+    background-color: $dangerColor;
+    color: $whiteColor;
+  }
+
+  .high {
+    background-color: $errorColor;
+    color: $whiteColor;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .todoItem .todoRightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todoItem .deletTodoBtn {
+    width: 94px;
+    margin: 2px 0px;
+  }
+
+  .todoItem .priority {
+    margin: 2px 0px;
+  }
+}

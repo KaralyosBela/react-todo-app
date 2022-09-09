@@ -1,71 +1,65 @@
 .filterBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    align-content: flex-start;
-    margin: 15px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  align-content: flex-start;
+  margin: 15px 0px;
 }
-
 .filterBar button {
-    position: relative;
-    font-weight: 700;
-    color: black;
-    background-color: white;
-    width: calc(100%/4);
-    /* width: 200px; */
-    height: 40px;
-    margin: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    border:none;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    transition: all 0.3s ease-in-out;
+  position: relative;
+  font-weight: 700;
+  color: black;
+  background-color: #fff;
+  width: 25%;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 0.3s ease-in-out;
 }
-
-.filterBar .active {
-    background-color: rgb(57, 134, 74);
-    color: white;
+.filterBar button.active {
+  background-color: rgb(57, 134, 74);
+  color: #fff;
 }
-
-.filterBar .showAllBtn:hover, .completedBtn:hover, .uncompletedBtn:hover {
-    background-color: rgb(57, 134, 74);
-    color: white;
+.filterBar .showAllBtn:hover,
+.filterBar .completedBtn:hover,
+.filterBar .uncompletedBtn:hover {
+  background-color: rgb(57, 134, 74);
+  color: #fff;
 }
-
 .filterBar .removeBtn:hover {
-    background-color: rgb(207, 22, 22);
-    color: white;
+  background-color: rgb(207, 22, 22);
+  color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
-    .filterBar {
-        display: flex;
-        flex-direction: column;
-    }
-    .filterBar button {
-        width: auto;
-        margin: 2px 0px;
-    }
-    .filterBar button span {
-        display: none;
-    }
+  .filterBar {
+    display: flex;
+    flex-direction: column;
+  }
+  .filterBar button {
+    width: auto;
+    margin: 2px 0px;
+  }
+  .filterBar button span {
+    display: none;
+  }
 }
-
-
 @media only screen and (min-width: 600px) {
-    .filterBar button span {
-        position: absolute;
-        top: -5px;
-        right: -5px;
-        width: 20px;
-        height: 20px;
-        border-radius: 20px;
-        background: white;
-        border: 2px solid rgb(57, 134, 74);
-        color: rgb(57, 134, 74);
-        transition: all 0.3s ease-in-out;
-    }
-}
-
+  .filterBar button span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    border: 2px solid rgb(57, 134, 74);
+    color: rgb(57, 134, 74);
+    transition: all 0.3s ease-in-out;
+  }
+}/*# sourceMappingURL=TodoFilterBar.module.css.map */

@@ -1,5 +1,5 @@
 import { useCompletedTodos, useRemainingTodos } from "../features/todo.hook";
-import classes from "../components/TodoCounter.module.css";
+import classes from "../components/TodoCounter.module.scss";
 
 export const TodoCounter: React.FC = () => {
   const remainingTodos = useRemainingTodos();
